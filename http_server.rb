@@ -6,7 +6,7 @@ require 'rack'
 WEB_ROOT = 'public'
 
 # Security problem
-# To avoid client request a file without public folder
+# To avoid client request a file outside public folder
 def requested_file(path)
   clean = []
   parts = path.split("/")
